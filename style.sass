@@ -1,0 +1,314 @@
+body 
+    margin: 0
+*
+  font-family: 'Roboto', sans-serif
+a
+    text-decoration: none
+.wrapper 
+    padding-left: 16px
+    padding-right: 16px
+    max-width: 1232px
+    margin: 0 auto
+.wrapper_nav
+    display: flex
+    justify-content: space-between
+    padding-top: 5px
+    
+.ico
+    fill: rgba(0,0,0,.7)
+nav 
+    height: 64px
+.nav
+    &_links
+        display: flex
+        justify-content: center
+        align-items: center
+    &_item, &_user
+        margin: 4px 
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 4px 16px 4px 12px
+        &:hover
+            background-color: rgba(207, 205, 205, 0.3)
+            border-radius: 8px
+        span
+            letter-spacing: .5px
+            color: rgba(0,0,0,.5) 
+            font-size: 15px
+            margin-left: 10px
+            &:hover
+                color: #000
+.header
+    display: flex
+    justify-content: flex-start
+    min-height: 254px
+    background-image: linear-gradient(45deg, #ffb325, #ff7300) 
+    right: 0
+    left: 0
+    h1
+        margin-bottom: 8px
+        font-size: 42px
+        line-height: 46px
+        letter-spacing: 1.3px
+        font-weight: 500
+        color: #fff
+    h2
+        margin-bottom: 28px
+        font-size: 17px
+        font-weight: 400
+        line-height: 22px
+        color: #fff
+    img
+        height: 254px
+
+    &_form
+        display: flex
+        justify-content: space-between
+        height: 50px
+        width: 760px
+    &_search
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #fff
+        box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%)
+        border-radius: 8px
+        height: 50px
+        width: 588px
+        margin-right: 24px
+        border: none
+        &_city
+            width: 54px
+            height: 48px
+            box-shadow: none
+            border-radius: 0
+            font-size: 16px
+            line-height: 1.5
+            transition: all .2s ease-in-out
+            border: none
+            color: #000
+            &::before
+                content: ''
+                display: block
+                width: 2px
+                height: 32px
+                background: #393636
+        &_field
+            box-shadow: none
+            font-size: 16px
+            line-height: 1.5
+            background: #fff
+            transition: all .2s ease-in-out
+            border: none
+            height: 48px
+            width: 450px
+            margin: 0 44px 0 16px
+    &_ico
+        padding: 12px 16px
+        fill: rgba(0,0,0,.7)
+    &_btn
+        padding: 10px 48px
+        border: 2px solid #fff
+        color: #fff
+        transition: all .2s ease-in-out
+        border-radius: 8px
+        text-transform: none
+        letter-spacing: .5px
+        ont-size: 16px
+        font-weight: 500
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        &:hover
+            background-color: rgba(255, 255, 255, 0.1)
+
+.home
+    &_projects
+        margin-top: 70px
+    &_card
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border: 1px solid #e0e0e0
+        border-radius: 8px
+        height: 45px
+        padding: 16px 
+        margin-bottom: 25px
+        transition: all .25s ease-out
+        &:hover
+            border-color: rgba(224,224,224,0)
+            box-shadow: 0px 0px 29px -9px rgba(34, 60, 80, 0.24)
+        &_title
+            font-weight: 600
+            font-size: 15px
+            line-height: 24px
+            color: rgba(0,0,0,.84)
+        &_descr
+            font-size: 15px
+            line-height: 24px
+            color: rgba(0,0,0,.5)
+        &_main 
+            display: flex
+            justify-content: center
+            align-items: center
+        svg, img
+            width: 32px
+            height: 32px
+            margin: 0 16px 0 8px
+
+.newbuildings
+    position: relative
+    margin-top: 60px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &_header
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+    &_title
+        font-size: 24px
+        line-height: 1.25
+        font-weight: 600
+        letter-spacing: .2px
+        margin-right: 16px
+    &_button
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #ededed
+        color: rgba(0,0,0,.84)
+        width: 82px
+        height: 32px
+        border-radius: 8px
+        svg
+            margin-left: 8px
+
+.buildings_list 
+    padding-bottom: 30px
+.card
+    width: 282px
+    height: 374px
+.inner
+    &_img
+        position: relative
+        img
+            width: 100%
+            border-radius: 8px
+        &_overlay
+            position: absolute
+            bottom: 3px
+            width: 100%
+            height: 150px
+            background-image: linear-gradient(0deg, black, rgba(0, 0, 0, 0))
+            opacity: 0.7
+            border-radius: 8px
+    &_content 
+        padding: 10px
+        width: 282px
+        height: 282px
+        display: flex
+        position: absolute
+        top: 66px
+        flex-direction: column
+        justify-content: space-between   
+        z-index: 1
+        &_header
+            display: inline-flex
+            flex-direction: column
+            justify-content: space-between  
+            &_label
+                display: inline-block
+                color: #fff
+                padding: 3px 8px
+                border-radius: 4px
+                margin-bottom: 8px
+                font-size: 15px
+            &_favorite
+                display: inline-flex
+                align-items: center
+                padding: 6px
+                color: rgba(0,0,0,.84)
+                background-color: #fff
+                border-radius: 8px
+                cursor: pointer
+                white-space: nowrap
+                transition: all .25s ease-out
+                box-shadow: 0 0 4px rgb(0 0 0 / 5%), 0 4px 8px rgb(0 0 0 / 10%)   
+                position: absolute
+                right: 21px
+                top: 9px
+                z-index: 2 
+        .label_orange
+            background: #ff9800
+            position: absolute                                 
+        .label_green
+            background: #00be71
+            position: absolute
+            margin-top: 30px  
+        .content_lower
+            position: relative  
+            
+        &_bottom
+            margin-bottom: 18px
+            h5
+                position: relative
+                font-size: 20px
+                font-weight: 600
+                line-height: 24px
+                letter-spacing: .2px
+                color: #fff
+                margin-bottom: 4px
+            &_developer
+                position: relative
+                color: #fff
+                font-size: 15px
+                line-height: 1.6
+.inner_lower
+
+.descr
+    padding: 8px 0 8px 0
+    display: flex
+    flex-direction: column
+    &_cost
+        font-weight: 600
+        font-size: 20px
+        color: #282828
+        margin-bottom: 4px
+    &_location
+        display: flex
+        align-items: center
+        &_label
+            display: flex
+            align-items: center
+            justify-content: space-between
+            color: rgba(0,0,0,.5)
+            margin-right: 4px
+        .ico_blue, .ico_green, .ico_red
+            margin-right: 4px
+        .ico_time
+            margin-right: 4px
+            fill: rgba(0,0,0,.5)
+    &_text
+        font-size: 15px
+        line-height: 1.6
+        color: rgba(0,0,0,.5)
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        
+                
+                    
+
+
+
+
+            
+
+
+    
+    
+
+
